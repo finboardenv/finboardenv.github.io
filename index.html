@@ -249,13 +249,34 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
 
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    <!-- Conference Link -->
+                    <!-- <span class="link-block">
+                      <a href="conference_url" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Conference</span>
+                    </a>
+                    </span> -->
+
+                    <span class="link-block">
+                        <a href="https://arxiv.org/abs/2605.27896" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="ai ai-arxiv"></i>
                         </span>
-                        <span>Our paper will be coming soon!</span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                        <a href="/" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code (Available Soon)</span>
                       </a>
                     </span>
 
@@ -320,7 +341,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Recently, large language models (LLMs) have achieved superior performance in static financial reasoning and simple dynamic trading tasks. However, current financial evaluations largely separate quantitative reasoning from dynamic constraints and social interactions, limiting the assessment of comprehensive financial decision-making. To bridge this gap, we propose FinBoardBench, an evaluation suite based on three financial board games: Cash Flow, Acquire, and Monopoly. This benchmark can evaluate a broad range of required financial skills, from personal cash flow management and corporate investment forecasting to open-ended trade negotiations. Experimental results show that LLMs exhibit basic long-term planning and investment logic, but struggle with liquidity constraints under uncertainty. Specifically, multiple LLMs often prioritize immediate asset acquisition or debt repayment over liquidity reserves, leaving them vulnerable to financial crises caused by random events. By exposing these behavioral gaps in controlled environments, FinBoardBench facilitates the development of more robust, strategically capable, and socially interactive financial agents.
+            Recently, large language models (LLMs) have achieved superior performance in static financial reasoning and simple dynamic trading tasks. However, existing static financial benchmarks are insufficient to assess the dynamic wealth management and financial decision-making capabilities of LLMs in real-world environments. To bridge this gap, we present FinBoardBench, an evaluation suite based on three classic financial board games: Cashflow, Acquire, and Monopoly. FinBoardBench assesses a comprehensive set of financial skills, including personal cash flow management with debt balancing, corporate investment and acquisition forecasting, and competitive trade negotiations with asset auctions. Our experiments with 9 advanced LLMs reveal that while exhibiting basic long-term planning and investment logic, they fail to effectively leverage complex interactions for profit, and their strong static reasoning performance does not transform into successful dynamic decision-making. Notably, they tend to prioritize immediate asset acquisition over maintaining sufficient liquidity, making them vulnerable to financial crises triggered by random events. We hope that FinBoardBench can provide a valuable reference for more intelligent LLM-based decision-making systems in the future.
           </p>
         </div>
         <div class="container is-max-desktop">
@@ -358,10 +379,14 @@
       <div class="column is-four-fifths">
         <h2 class="title is-4">Key Conclusion</h2>
         <div class="content has-text-justified">
+          <p>
+            We evaluate 9 advanced LLMs in FinBoardBench: GPT-5.4, Gemini-3.1-Pro Preview, GLM-5.1, HY3 Preview, DeepSeek V4 Pro, Doubao-2.0-Pro, Kimi K2.6, Qwen-3.6-Plus, and Mimo V2.5 Pro. 
+            Our key conclusions are as follows:
+          </p>
           <ul>
-            <li>LLMs exhibit basic long-term planning and management logic, enabling them to play dynamic financial games, but lack the awareness and ability to use complex interactions to generate profits.</li>
-            <li>LLMs prioritize immediate acquisition of assets or repayment of debts rather than maintaining sufficient liquidity, making them vulnerable to financial crises caused by random events.</li>
-            <li>LLMs achieve superior performance on static benchmarks, but cannot effectively manage cash flow to participate in dynamic financial investment activities.</li>
+            <li>LLMs exhibit basic long-term planning and management logic, enabling them to play financial games, but lack the awareness and ability to use complex interactions to generate profits.</li>
+            <li>LLMs prioritize immediate acquisition of assets rather than maintaining sufficient liquidity, making them vulnerable to financial crises caused by random events.</li>
+            <li>The advanced LLMs perform well on static financial benchmarks, but the capability does not transform into effective financial decision-making ability, which leads to failure in dynamic financial games.</li>
           </ul>
         </div>
       </div>
